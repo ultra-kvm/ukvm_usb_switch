@@ -1,0 +1,4 @@
+[submodule "ukvm_arduino_utils"]
+	url = https://github.com/ultra-kvm/ukvm_arduino_utils.git
+[submodule "ukvm_arduino_serial"]
+	url = https://github.com/ultra-kvm/ukvm_arduino_serial.git

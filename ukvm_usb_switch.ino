@@ -18,7 +18,7 @@ int getIdxPin(int idx){ //index starts at 1
 
 void setup() {
   ukvm_serial = new UKVM_Serial();
-  ukvm_serial->init();
+  ukvm_serial->init(19200);
   ukvm_serial->onCommand = onSerialCommand;
   gLog = ukvm_serial->log;
 
@@ -79,6 +79,6 @@ void onAnyCommand(String cmd, String val){
 
 
 void onSerialCommand(String cmd, String val){
-  gLog("[From serial] cmd: " + cmd + "    value: " + val);
+  //gLog("[From serial] cmd: " + cmd + "    value: " + val);
   onAnyCommand(cmd, val);
 }
